@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "devops_bucket" {
-  bucket = "devops-bucket"
+  bucket = "devops-bucket-mupparaju"
 }
 
 resource "aws_s3_bucket_public_access_block" "block_public" {
