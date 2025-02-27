@@ -49,7 +49,7 @@ AWS-DevOps-Automation/
 ## **Step 2: Configure Terraform**
 Initialize Terraform and download required providers:
 ```bash
-🔧 cd terraform
+🔧 cd AWS-DevOps-Automation
 terraform init
 ```
 
@@ -149,17 +149,6 @@ If you want to remove all resources:
 📝 git commit -m "Added .gitignore for Terraform"
 ```
 
-✅ **Use Terraform Remote Backend for State Management**
-Modify `backend.tf` (optional):
-```hcl
-terraform {
-  backend "s3" {
-    bucket = "my-terraform-state-bucket"
-    key    = "devops/terraform.tfstate"
-    region = "us-west-2"
-  }
-}
-```
 
 ✅ **Secure IAM Policies**
 Restrict EC2 IAM roles **only to required permissions**.
@@ -168,7 +157,6 @@ Restrict EC2 IAM roles **only to required permissions**.
 
 ## **Future Enhancements**
 🚀 Add **CI/CD with GitHub Actions** for auto-deployment.
-🚀 Deploy **Kubernetes (EKS)** for better scalability.
 🚀 Use **Terraform Modules** to structure code better.
 
 ---
