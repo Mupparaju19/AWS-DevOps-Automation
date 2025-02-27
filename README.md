@@ -23,13 +23,13 @@ Ensure you have the following installed before starting:
 ## **Project Structure**
 ```
 AWS-DevOps-Automation/
-│── terraform/                      # Terraform Infrastructure Code
+│                      # Terraform Infrastructure Code
 │   ├── main.tf                     # AWS Provider & VPC Setup
 │   ├── ec2.tf                       # EC2 Configuration
 │   ├── iam.tf                       # IAM Role & Policies
 │   ├── s3.tf                        # S3 Bucket Creation
-│   ├── variables.tf                 # Input Variables
-│   ├── outputs.tf                   # Terraform Outputs
+│   ├── index.html                
+│                   
 │── scripts/
 │   ├── install.sh                    # EC2 User Data Script
 │── .gitignore                        # Ignoring Unnecessary Files
